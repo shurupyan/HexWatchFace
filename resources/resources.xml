@@ -1,0 +1,8 @@
+<resources>
+    <string id="AppName">HexWatchFace</string>
+
+    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+    <fonts>
+    	<font id="id_font_terminal_105" filename="fonts/terminal_105.fnt" filter="0123456789:ABCDEFx" />
+    </fonts>
+</resources>
