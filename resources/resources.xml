@@ -4,5 +4,6 @@
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
     <fonts>
     	<font id="id_font_terminal_105" filename="fonts/terminal_105.fnt" filter="0123456789:ABCDEFx" />
+    	<font id="id_font_terminal_100" filename="fonts/terminal_100.fnt" filter="0123456789:ABCDEFx" />
     </fonts>
 </resources>
