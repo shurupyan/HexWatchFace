@@ -4,7 +4,7 @@ using Toybox.System as Sys;
 //using Toybox.Lang as Lang;
 
 
-var sleepMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
+var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
 var width, height;
 
 class HexWatchFaceView extends Ui.WatchFace {
@@ -41,6 +41,31 @@ class HexWatchFaceView extends Ui.WatchFace {
         dc.drawText(width/2, height/2+height/5, Gfx.FONT_SMALL, date, Gfx.TEXT_JUSTIFY_CENTER);
 	}
 	
+	function drawTime(dc) {	
+		// Get and show the current time
+        var clockTime = Sys.getClockTime();
+        var hours = clockTime.hour.toNumber();
+        var hoursStr;
+        var timeLabelName;
+        
+        if( Sys.getDeviceSettings().is24Hour ) { 
+        	timeLabelName = "TimeLabel_100";
+        	hoursStr = decToHex(hours);
+ 		}
+ 		else {// if watch is in 12hour Mode 
+       		timeLabelName = "TimeLabel_105";
+        	if (hours > 12) {
+        		hours = hours - 12;
+        	}
+        	hoursStr = toHexDigit(hours);       	
+		}     
+
+        var timeString = "0x" + hoursStr + ":" + decToHex(clockTime.min);
+        var view = View.findDrawableById(timeLabelName);
+        view.setText(timeString);
+              // Call the parent onUpdate function to redraw the layout
+        View.onUpdate(dc);     
+	}
 	
     function drawFullInfo(dc) {	
     	//
@@ -55,30 +80,13 @@ class HexWatchFaceView extends Ui.WatchFace {
 	
     //! Update the view
     function onUpdate(dc) {
-    //System.println("Hello %Monkey C!");
-        // Get and show the current time
-        var clockTime = Sys.getClockTime();
-        var hours12 = clockTime.hour;
-       
-        if (hours12 > 12) {
-        	hours12 = hours12 - 12;
-        }
-      
-       //  System.println("Hello Monkey C!"+hours12);
-        var timeString = "0x" + toHexDigit(hours12) + ":" + decToHex(clockTime.min);
-       // var timeString = dateStrings.day.toString();
-        var view = View.findDrawableById("TimeLabel");
-        view.setText(timeString);
-
-      // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);     
-                
+    
+        drawTime(dc);
+           
         //USER is watching the watch -> show all information
-        if (sleepMode){
+        if (wakeMode){
 			drawFullInfo(dc);
-        }
-        
-       
+        }       
      
     }
 
@@ -86,19 +94,19 @@ class HexWatchFaceView extends Ui.WatchFace {
     //! state of this View here. This includes freeing resources from
     //! memory.
     function onHide() {
-    	sleepMode = false;
+    	wakeMode = false;
     	Ui.requestUpdate();
     }
 
     //! The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-    	sleepMode = true;
+    	wakeMode = true;
     	Ui.requestUpdate();
     }
 
     //! Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
-    	sleepMode = false;
+    	wakeMode = false;
     	Ui.requestUpdate();
     }
     
