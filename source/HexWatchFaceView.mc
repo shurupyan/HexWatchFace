@@ -62,12 +62,20 @@ class HexWatchFaceView extends Ui.WatchFace {
 
         var timeString = "0x" + hoursStr + ":" + decToHex(clockTime.min);
         var view = View.findDrawableById(timeLabelName);
-        view.setText(timeString);
+        view.setText(timeString);      
               // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);     
+        View.onUpdate(dc);             
+	}
+	
+	function drawBT(dc) {
+ 		if ( Sys.getDeviceSettings().phoneConnected) {
+        	var BtIcon = Ui.loadResource(Rez.Drawables.id_icon_BT);  // load pictur from resources.xml
+        	dc.drawBitmap(width/2 - BtIcon.getWidth()/2 , height/8, BtIcon);
+        	} 
 	}
 	
     function drawFullInfo(dc) {	
+    	drawBT(dc);
     	//
         drawDate(dc);
          // Battery
@@ -115,19 +123,19 @@ class HexWatchFaceView extends Ui.WatchFace {
  	function drawBatt(dc,batx,baty){
               // Batterie neu
 		var batWidth = 40;
-		var batHeight = 16;
+		var batHeight = 15;
         var batt = Sys.getSystemStats().battery; // get battery status
         batt = batt.toNumber(); // safety first --> set it to integer
         dc.setPenWidth(1);
         batx = batx.toNumber();
         baty = baty.toNumber();
-        var batFill = (batWidth-2)*batt/100;
+        var batFill = (batWidth-4)*batt/100;
              
               // draw boarder 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE); 
         dc.fillRectangle(batx, baty, batWidth, batHeight); // white area BODY
         dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_DK_GRAY); 
-        dc.fillRectangle(batx + batWidth, baty +batHeight/4, batHeight/4, batHeight/2); //  BOBBL
+        dc.fillRectangle(batx + batWidth, baty +batHeight/4+1, batHeight/4, batHeight/2); //  BOBBL
         dc.drawRectangle(batx, baty, batWidth, batHeight); // frame
            //draw green / colored fill-level
                
@@ -142,9 +150,9 @@ class HexWatchFaceView extends Ui.WatchFace {
 						color = Gfx.COLOR_RED;}
 			
      	dc.setColor(color, Gfx.COLOR_TRANSPARENT);
-        dc.fillRectangle(batx+1, baty+1, batFill, batHeight-2);
+        dc.fillRectangle(batx+2, baty+2, batFill, batHeight-4);
         dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(batx+batWidth/2,  baty+batHeight/2-2 , Gfx.FONT_XTINY, batt.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(batx+batWidth/2,  baty+batHeight/2-1 , Gfx.FONT_XTINY, batt.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);
                
 	} // End drawbattfunction    
 

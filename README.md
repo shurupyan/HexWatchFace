@@ -1,2 +1,2 @@
 # HexWatchFace
-WatchFace for Garmin Fenix 3
+Connect IQ WatchFace for Garmin Fenix 3

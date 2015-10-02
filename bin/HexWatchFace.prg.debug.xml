@@ -13,58 +13,77 @@
 <entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="39" pc="268435869" symbol="drawDate"/>
 <entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="40" pc="268435936" symbol="drawDate"/>
 <entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="41" pc="268435972" symbol="drawDate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="47" pc="268436056" symbol="drawFullInfo"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="49" pc="268436070" symbol="drawFullInfo"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="60" pc="268436136" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="61" pc="268436153" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="63" pc="268436163" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="64" pc="268436174" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="68" pc="268436187" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="70" pc="268436234" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="71" pc="268436258" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="74" pc="268436272" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="77" pc="268436292" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="78" pc="268436303" symbol="onUpdate"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="89" pc="268436323" symbol="onHide"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="90" pc="268436333" symbol="onHide"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="95" pc="268436352" symbol="onExitSleep"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="96" pc="268436362" symbol="onExitSleep"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="101" pc="268436381" symbol="onEnterSleep"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="102" pc="268436391" symbol="onEnterSleep"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="109" pc="268436410" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="110" pc="268436417" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="111" pc="268436424" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="112" pc="268436447" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="113" pc="268436460" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="114" pc="268436477" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="115" pc="268436490" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="116" pc="268436503" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="119" pc="268436522" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="120" pc="268436558" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="121" pc="268436578" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="122" pc="268436614" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="123" pc="268436658" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="126" pc="268436678" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="127" pc="268436678" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="128" pc="268436689" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="130" pc="268436717" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="132" pc="268436745" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="134" pc="268436762" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="136" pc="268436776" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="46" pc="268436056" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="47" pc="268436073" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="48" pc="268436092" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="49" pc="268436092" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="51" pc="268436092" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="52" pc="268436116" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="53" pc="268436123" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="56" pc="268436141" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="57" pc="268436148" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="58" pc="268436159" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="60" pc="268436172" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="63" pc="268436187" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="64" pc="268436223" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="65" pc="268436244" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="67" pc="268436258" symbol="drawTime"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="71" pc="268436281" symbol="drawBT"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="72" pc="268436305" symbol="drawBT"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="73" pc="268436342" symbol="drawBT"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="78" pc="268436408" symbol="drawFullInfo"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="80" pc="268436422" symbol="drawFullInfo"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="82" pc="268436436" symbol="drawFullInfo"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="92" pc="268436502" symbol="onUpdate"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="95" pc="268436516" symbol="onUpdate"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="96" pc="268436527" symbol="onUpdate"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="105" pc="268436547" symbol="onHide"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="106" pc="268436557" symbol="onHide"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="111" pc="268436576" symbol="onExitSleep"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="112" pc="268436586" symbol="onExitSleep"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="117" pc="268436605" symbol="onEnterSleep"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="118" pc="268436615" symbol="onEnterSleep"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="125" pc="268436634" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="126" pc="268436641" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="127" pc="268436648" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="128" pc="268436671" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="129" pc="268436684" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="130" pc="268436701" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="131" pc="268436714" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="132" pc="268436727" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="135" pc="268436746" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="136" pc="268436782" symbol="drawBatt"/>
 <entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="137" pc="268436802" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="138" pc="268436840" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="139" pc="268436876" symbol="drawBatt"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="7" pc="268437298" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceApp.mc" lineNum="15" pc="268436980" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="3" pc="268437339" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="6" pc="268437350" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="11" pc="268437328" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="20" pc="268437021" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="21" pc="268437070" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="22" pc="268437167" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="23" pc="268437182" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="24" pc="268437234" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="25" pc="268437280" symbol="WatchFace"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="138" pc="268436838" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="139" pc="268436888" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="142" pc="268436908" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="143" pc="268436908" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="144" pc="268436919" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="146" pc="268436947" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="148" pc="268436975" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="150" pc="268436992" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="152" pc="268437006" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="153" pc="268437032" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="154" pc="268437070" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="155" pc="268437106" symbol="drawBatt"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceView.mc" lineNum="7" pc="268437797" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Shurup\\workspace\\HexWatchFace\\source\\HexWatchFaceApp.mc" lineNum="15" pc="268437210" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="3" pc="268437847" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="4" pc="268437856" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="7" pc="268437867" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="12" pc="268437827" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="13" pc="268437836" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="22" pc="268437251" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="23" pc="268437300" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="24" pc="268437397" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="25" pc="268437412" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="26" pc="268437464" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="27" pc="268437510" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="28" pc="268437559" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="29" pc="268437656" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="30" pc="268437671" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="31" pc="268437723" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="32" pc="268437769" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -72,7 +91,7 @@
 <entry field="true" id="8388831" symbol="SPORT_RUNNING"/>
 <entry field="true" id="8389423" symbol="DEVICE_STATE_CNT"/>
 <entry field="true" id="8388974" symbol="TONE_ALARM"/>
-<entry id="19" method="true" symbol="drawFullInfo"/>
+<entry id="23" method="true" symbol="drawFullInfo"/>
 <entry id="8388823" method="true" symbol="emptyMailbox"/>
 <entry id="8388634" module="true" symbol="Ant"/>
 <entry field="true" id="8388906" symbol="MOVE_BAR_LEVEL_MAX"/>
@@ -129,7 +148,7 @@
 <entry field="true" id="8389155" symbol="FONT_MEDIUM"/>
 <entry id="8388663" method="true" symbol="testAdd"/>
 <entry id="8389119" method="true" symbol="getDirection"/>
-<entry id="20" method="true" symbol="drawBatt"/>
+<entry id="24" method="true" symbol="drawBatt"/>
 <entry field="true" id="8389475" symbol="rightPedalSmoothness"/>
 <entry id="8389101" method="true" symbol="onSwipe"/>
 <entry id="8389247" symbol="measurementType"/>
@@ -159,7 +178,7 @@
 <entry id="8388659" method="true" symbol="testAbs"/>
 <entry field="true" id="8388989" symbol="dutyCycle"/>
 <entry id="8389043" object="true" symbol="ProgressBar"/>
-<entry field="true" id="15" symbol="AppName"/>
+<entry field="true" id="17" symbol="AppName"/>
 <entry field="true" id="8388927" symbol="SECONDS_PER_YEAR"/>
 <entry id="8389418" object="true" symbol="CommonData"/>
 <entry id="8389114" method="true" symbol="getType"/>
@@ -261,6 +280,7 @@
 <entry id="8388642" module="true" symbol="Position"/>
 <entry id="8389187" method="true" symbol="fillPolygon"/>
 <entry field="true" id="8389210" symbol="MSG_ID_OPEN_CHANNEL"/>
+<entry id="22" method="true" symbol="drawBT"/>
 <entry field="true" id="8389153" symbol="FONT_TINY"/>
 <entry id="8389433" object="true" symbol="CalculatedPower"/>
 <entry id="8388932" symbol="getDayHash"/>
@@ -310,7 +330,7 @@
 <entry id="8388631" module="true" symbol="Activity"/>
 <entry id="8389361" symbol="&lt;hrv&gt;"/>
 <entry id="8388896" method="true" symbol="asin"/>
-<entry id="18" method="true" symbol="drawDate"/>
+<entry id="20" method="true" symbol="drawDate"/>
 <entry field="true" id="8388802" symbol="BLE_HOST_TIMEOUT"/>
 <entry id="5" module="true" symbol="globals_Rez_Fonts"/>
 <entry field="true" id="8388912" symbol="steps"/>
@@ -325,6 +345,7 @@
 <entry id="8388767" object="true" symbol="Method"/>
 <entry field="true" id="8388994" symbol="KEY_ENTER"/>
 <entry field="true" id="8389264" symbol="DEFAULT_TRANSMISSION_TYPE"/>
+<entry field="true" id="14" symbol="id_icon_BT"/>
 <entry field="true" id="8389005" symbol="KEY_UP_RIGHT"/>
 <entry field="true" id="8388726" symbol="freeMemory"/>
 <entry id="8389079" method="true" symbol="onPreviousPage"/>
@@ -449,7 +470,7 @@
 <entry field="true" id="8389272" symbol="searchTimeoutLowPriority"/>
 <entry field="true" id="8388983" symbol="TONE_LOW_BATTERY"/>
 <entry id="8389178" method="true" symbol="drawCircle"/>
-<entry id="17" method="true" symbol="decToHex"/>
+<entry id="19" method="true" symbol="decToHex"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="9" object="true" symbol="HexWatchFaceView"/>
 <entry field="true" id="8389429" symbol="BIKE_POWER_SENSOR_TYPE_CRANK_TORQUE"/>
@@ -499,8 +520,9 @@
 <entry id="8389307" method="true" symbol="toDegrees"/>
 <entry id="8389441" object="true" symbol="Geocache"/>
 <entry field="true" id="8389054" symbol="PUSH_VIEW"/>
-<entry field="true" id="14" symbol="id_font_terminal_105"/>
+<entry field="true" id="15" symbol="id_font_terminal_105"/>
 <entry id="8388664" method="true" symbol="testSub"/>
+<entry field="true" id="16" symbol="id_font_terminal_100"/>
 <entry field="true" id="8388875" symbol="SUB_SPORT_INDOOR_SKIING"/>
 <entry field="true" id="8389270" symbol="messagePeriod"/>
 <entry field="true" id="8389426" symbol="BIKE_POWER_SENSOR_TYPE_NONE"/>
@@ -572,7 +594,7 @@
 <entry field="true" id="8389411" symbol="BATT_STATUS_NEW"/>
 <entry id="8389028" object="true" symbol="MenuInputDelegate"/>
 <entry id="8388705" method="true" symbol="callback"/>
-<entry id="16" method="true" symbol="toHexDigit"/>
+<entry id="18" method="true" symbol="toHexDigit"/>
 <entry field="true" id="8389528" symbol="batteryVoltage"/>
 <entry field="true" id="8389314" symbol="latitude"/>
 <entry id="8388688" method="true" symbol="testSystemError"/>
@@ -763,6 +785,7 @@
 <entry id="8388825" object="true" symbol="ConnectionListener"/>
 <entry id="8388698" method="true" symbol="start"/>
 <entry field="true" id="8389454" symbol="WEIGHT_SCALE_ACTIVITY_LEVEL_CNT"/>
+<entry field="true" id="8" symbol="wakeMode"/>
 <entry field="true" id="8388813" symbol="NETWORK_REQUEST_TIMED_OUT"/>
 <entry id="8389323" symbol="may"/>
 <entry field="true" id="8388930" symbol="SECONDS_PER_MINUTE"/>
@@ -866,7 +889,6 @@
 <entry id="8388670" method="true" symbol="testShiftL"/>
 <entry id="8388658" method="true" symbol="testSubstringAndFind"/>
 <entry id="8389488" symbol="DEVICE_TYPE_WEIGHT_SCALE"/>
-<entry field="true" id="8" symbol="sleepMode"/>
 <entry id="8389179" method="true" symbol="drawEllipse"/>
 <entry field="true" id="8389379" symbol="OBSCURE_LEFT"/>
 <entry id="8388820" object="true" symbol="MailboxIterator"/>
@@ -897,6 +919,7 @@
 <entry id="8389120" symbol="mLayout"/>
 <entry id="8388618" module="true" symbol="Toybox_Math"/>
 <entry id="8389332" symbol="monday"/>
+<entry id="21" method="true" symbol="drawTime"/>
 <entry id="8389343" symbol="minutes"/>
 <entry field="true" id="8389214" symbol="MSG_ID_CHANNEL_RESPONSE_EVENT"/>
 <entry id="8389356" symbol="&lt;fin&gt;"/>
@@ -1056,6 +1079,14 @@
 <documentation/>
 </functionEntry>
 <functionEntry name="drawDate">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawTime">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawBT">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
