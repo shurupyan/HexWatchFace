@@ -38,7 +38,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 		var dateStrings = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var date = dateStrings.day_of_week.toString() + " " + dateStrings.day.toString() + " " + dateStrings.month.toString(); 
         dc.setColor( Gfx.COLOR_GREEN,  Gfx.COLOR_TRANSPARENT);
-        dc.drawText(width/2, height/2+height/5, Gfx.FONT_SMALL, date, Gfx.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width/2, height/2+height/3.5, Gfx.FONT_SMALL, date, Gfx.TEXT_JUSTIFY_CENTER);
 	}
 	
 	function drawTime(dc) {	
@@ -74,12 +74,36 @@ class HexWatchFaceView extends Ui.WatchFace {
         	} 
 	}
 	
+	function drawActivity(dc) {
+		var MILES_PER_KM = 0.62137;
+		var CM_PER_KM = 100 * 1000;
+    	var activity = ActivityMonitor.getInfo();
+      	var moveBarLevel = activity.moveBarLevel;
+        var distance = activity.distance.toFloat() / CM_PER_KM; // distance is saved as cm --> / 100 / 1000 --> km
+        var units;            
+        if (Sys.getDeviceSettings().distanceUnits){//is watch set to IMPERIAL-Units?  km--> miles
+            distance = distance.toFloat() * MILES_PER_KM;
+            units = "mi";
+         }
+         else {
+         	units = "km";      
+        	}
+        distance = distance.format("%2.1f");     // formatting km/mi to 2numbers + 1 digit
+
+		var text = activity.steps + "/" + activity.stepGoal + " " + distance + units;
+		dc.setColor( Gfx.COLOR_GREEN,  Gfx.COLOR_TRANSPARENT);
+        dc.drawText(width/2, height/2+height/5, Gfx.FONT_TINY, text , Gfx.TEXT_JUSTIFY_CENTER);
+
+	}
+	
     function drawFullInfo(dc) {	
     	drawBT(dc);
     	//
         drawDate(dc);
          // Battery
 		drawBatt(dc, width/2 - 20, height/2 + (height/2.4) ); // function, source below
+
+		drawActivity(dc);
 
      //   var dateStrings1 = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
       //  var time = dateStrings1.hour.toString();
