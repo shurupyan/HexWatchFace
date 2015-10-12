@@ -22,18 +22,6 @@ class HexWatchFaceView extends Ui.WatchFace {
     function onShow() {
     }
     
-    
-	function toHexDigit(digit) {
-		var hex_digits = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
-		return hex_digits[digit];
-    }
-    
-    function decToHex(num) {	
-		var hi = (num/16).toNumber();
-		var lo = toHexDigit(num%16); 
-		return hi+lo;
-	}
-    
     function drawDate(dc) {	
 		var dateStrings = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var date = dateStrings.day_of_week.toString() + " " + dateStrings.day.toString() + " " + dateStrings.month.toString(); 
@@ -46,21 +34,25 @@ class HexWatchFaceView extends Ui.WatchFace {
         var clockTime = Sys.getClockTime();
         var hours = clockTime.hour.toNumber();
         var hoursStr;
-        var timeLabelName;
+        var timeLabelName = "TimeLabel_100";
+        var ampm = "";
         
         if( Sys.getDeviceSettings().is24Hour ) { 
-        	timeLabelName = "TimeLabel_100";
-        	hoursStr = decToHex(hours);
+        	
+        	hoursStr = hours.format("%02X"); 
  		}
  		else {// if watch is in 12hour Mode 
-       		timeLabelName = "TimeLabel_105";
         	if (hours > 12) {
+        		ampm = "p";
         		hours = hours - 12;
         	}
-        	hoursStr = toHexDigit(hours);       	
+        	else {
+        		ampm = "a";
+        	}
+        	hoursStr = hours.format("%1X");       	
 		}     
 
-        var timeString = "0x" + hoursStr + ":" + decToHex(clockTime.min);
+        var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
         var view = View.findDrawableById(timeLabelName);
         view.setText(timeString);      
               // Call the parent onUpdate function to redraw the layout
@@ -88,11 +80,25 @@ class HexWatchFaceView extends Ui.WatchFace {
          else {
          	units = "km";      
         	}
-        distance = distance.format("%2.1f");     // formatting km/mi to 2numbers + 1 digit
-
-		var text = activity.steps + "/" + activity.stepGoal + " " + distance + units;
+        if(distance < 100) {
+        	distance = distance.format("%2.1f");     // formatting km/mi to 2numbers + 1 digit
+		}
+		else {
+			distance = distance.format("%3u");
+		}
+		
+		
+		var text = "";
+		if(activity.steps){
+			text = activity.steps + "/" + activity.stepGoal;
+		}
+		
+		if(activity.distance.toFloat()) {
+			text = text + " " + distance + units;
+		}
+			 
 		dc.setColor( Gfx.COLOR_GREEN,  Gfx.COLOR_TRANSPARENT);
-        dc.drawText(width/2, height/2+height/5, Gfx.FONT_TINY, text , Gfx.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width/2, height/2+height/5, Gfx.FONT_SMALL, text , Gfx.TEXT_JUSTIFY_CENTER);
 
 	}
 	
