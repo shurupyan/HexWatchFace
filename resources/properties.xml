@@ -1,0 +1,48 @@
+<resources>
+
+	<properties>
+		<property id="timeColor_prop" type="number">0x00AAFF</property>
+	</properties>
+
+	<strings>
+		<string id="timeColor_title">Time color</string>
+		<string id="timeColor_prompt">Select color of time digits</string>
+		<string id="red_title">Red</string>
+		<string id="blue_title">Blue</string>
+		<string id="green_title">Green</string>
+		<string id="white_title">White</string>
+		<string id="lt_gray_title">Light Gray</string>
+		<string id="dk_gray_title">Dark Gray</string>
+		<string id="black_title">Black</string>
+		<string id="dk_red_title">Dark Red</string>
+		<string id="orange_title">Orange</string>
+		<string id="yellow_title">Yellow</string>
+		<string id="dk_green_title">Dark Green</string>
+		<string id="dk_blue_title">Dark Blue</string>
+		<string id="purple_title">Purple</string>
+		<string id="pink_title">Pink</string>
+	</strings>
+
+	<settings>
+		<setting propertyKey="timeColor_prop" title="timeColor_title"
+			prompt="timeColor_prompt">
+			<settingConfig type="list">
+				<listEntry value="0xFFFFFF">white_title</listEntry>
+				<listEntry value="0xAAAAAA">lt_gray_title</listEntry>
+				<listEntry value="0x555555">dk_gray_title</listEntry>
+				<listEntry value="0x000000">black_title</listEntry>
+				<listEntry value="0xFF0000">red_title</listEntry>
+				<listEntry value="0xAA0000">dk_red_title</listEntry>
+				<listEntry value="0xFF5500">orange_title</listEntry>
+				<listEntry value="0xFFAA00">yellow_title</listEntry>
+				<listEntry value="0x00FF00">green_title</listEntry>
+				<listEntry value="0x00AA00">dk_green_title</listEntry>
+				<listEntry value="0x00AAFF">blue_title</listEntry>
+				<listEntry value="0x0000FF">dk_blue_title</listEntry>
+				<listEntry value="0xAA00FF">purple_title</listEntry>
+				<listEntry value="0xFF00FF">pink_title</listEntry>
+			</settingConfig>
+		</setting>
+
+	</settings>
+</resources>
