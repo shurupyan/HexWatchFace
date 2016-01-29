@@ -1,18 +1,23 @@
 <resources>
-    <string id="AppName">HexWatchFace</string>
+	<string id="AppName">HexWatchFace</string>
 
-    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
-    <bitmaps>
-        <bitmap id="id_icon_BT" filename="images/BT.png">
-        	<palette>
+	<bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+	<bitmaps>
+		<bitmap id="id_icon_BT" filename="images/BT.png">
+			<palette>
 				<color>0000FF</color>
-				<color>FFFFFF</color>		
-    	 	</palette>
-    	 </bitmap>
- 
-    </bitmaps>
-    <fonts>
-    	<font id="id_font_terminal_105" filename="fonts/terminal_105.fnt" filter="0123456789:ABCDEFx" />
-    	<font id="id_font_terminal_100" filename="fonts/terminal_100_ap.fnt" filter="0123456789:ABCDEFxap" />
-    </fonts>
+				<color>FFFFFF</color>
+			</palette>
+		</bitmap>
+
+	</bitmaps>
+	<fonts>
+		<font id="id_font_terminal_100" filename="fonts/terminal_100_123.fnt"
+			filter="0123456789:ABCDEFxap" />
+	</fonts>
+
+
+
+
 </resources>
+

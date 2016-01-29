@@ -4,11 +4,14 @@ using Toybox.System as Sys;
 //using Toybox.Lang as Lang;
 
 
-var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
-var width, height;
+
 
 class HexWatchFaceView extends Ui.WatchFace {
 
+	var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
+	var width, height;
+	var timeColor;
+	
     //! Load your resources here
     function onLayout(dc) {
     	width = dc.getWidth();
@@ -36,7 +39,7 @@ class HexWatchFaceView extends Ui.WatchFace {
         var hoursStr;
         var timeLabelName = "TimeLabel_100";
         var ampm = "";
-        
+		        
         if( Sys.getDeviceSettings().is24Hour ) { 
         	
         	hoursStr = hours.format("%02X"); 
@@ -53,8 +56,10 @@ class HexWatchFaceView extends Ui.WatchFace {
 		}     
 
         var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
-        var view = View.findDrawableById(timeLabelName);
-        view.setText(timeString);      
+        var timeLabel = View.findDrawableById(timeLabelName);
+        timeLabel.setColor(timeColor);
+		//System.println(timeString);
+        timeLabel.setText(timeString);      
               // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);             
 	}
@@ -119,6 +124,8 @@ class HexWatchFaceView extends Ui.WatchFace {
     //! Update the view
     function onUpdate(dc) {
     
+    	timeColor = Application.getApp().getProperty("timeColor_prop");
+    	
         drawTime(dc);
            
         //USER is watching the watch -> show all information
