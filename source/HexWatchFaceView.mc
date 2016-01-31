@@ -10,7 +10,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 
 	var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
 	var width, height;
-	var timeColor;
+	var timeColor, backColor;
 	
     //! Load your resources here
     function onLayout(dc) {
@@ -28,7 +28,7 @@ class HexWatchFaceView extends Ui.WatchFace {
     function drawDate(dc) {	
 		var dateStrings = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var date = dateStrings.day_of_week.toString() + " " + dateStrings.day.toString() + " " + dateStrings.month.toString(); 
-        dc.setColor( Gfx.COLOR_GREEN,  Gfx.COLOR_TRANSPARENT);
+        dc.setColor( Gfx.COLOR_GREEN,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
         dc.drawText(width/2, height/2+height/3.5, Gfx.FONT_SMALL, date, Gfx.TEXT_JUSTIFY_CENTER);
 	}
 	
@@ -37,7 +37,6 @@ class HexWatchFaceView extends Ui.WatchFace {
         var clockTime = Sys.getClockTime();
         var hours = clockTime.hour.toNumber();
         var hoursStr;
-        var timeLabelName = "TimeLabel_100";
         var ampm = "";
 		        
         if( Sys.getDeviceSettings().is24Hour ) { 
@@ -56,17 +55,16 @@ class HexWatchFaceView extends Ui.WatchFace {
 		}     
 
         var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
-        var timeLabel = View.findDrawableById(timeLabelName);
-        timeLabel.setColor(timeColor);
+        var timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
 		//System.println(timeString);
-        timeLabel.setText(timeString);      
-              // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);             
+		 dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
+		 dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);      
+
 	}
 	
 	function drawBT(dc) {
  		if ( Sys.getDeviceSettings().phoneConnected) {
-        	var BtIcon = Ui.loadResource(Rez.Drawables.id_icon_BT);  // load pictur from resources.xml
+        	var BtIcon = Ui.loadResource(Rez.Drawables.id_icon_BT);  // load picture from resources.xml
         	dc.drawBitmap(width/2 - BtIcon.getWidth()/2 , height/8, BtIcon);
         	} 
 	}
@@ -102,7 +100,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 			text = text + " " + distance + units;
 		}
 			 
-		dc.setColor( Gfx.COLOR_GREEN,  Gfx.COLOR_TRANSPARENT);
+		dc.setColor( Gfx.COLOR_GREEN,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
         dc.drawText(width/2, height/2+height/5, Gfx.FONT_SMALL, text , Gfx.TEXT_JUSTIFY_CENTER);
 
 	}
@@ -123,9 +121,12 @@ class HexWatchFaceView extends Ui.WatchFace {
 	
     //! Update the view
     function onUpdate(dc) {
-    
-    	timeColor = Application.getApp().getProperty("timeColor_prop");
     	
+    	
+    	timeColor = Application.getApp().getProperty("timeColor_prop");
+    	backColor = Application.getApp().getProperty("backColor_prop");
+    	dc.setColor(timeColor,backColor);
+ 		dc.clear();     
         drawTime(dc);
            
         //USER is watching the watch -> show all information

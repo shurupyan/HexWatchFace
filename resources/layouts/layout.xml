@@ -1,4 +1,2 @@
 <layout id="WatchFace">
-	<label id="TimeLabel_100" x="center" y="center"
-		font="Rez.Fonts.id_font_terminal_100" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 </layout>
