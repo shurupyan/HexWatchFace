@@ -10,7 +10,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 
 	var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
 	var width, height;
-	var timeColor, backColor;
+	var timeColor, backColor, infoColor;
 	
     //! Load your resources here
     function onLayout(dc) {
@@ -28,7 +28,7 @@ class HexWatchFaceView extends Ui.WatchFace {
     function drawDate(dc) {	
 		var dateStrings = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var date = dateStrings.day_of_week.toString() + " " + dateStrings.day.toString() + " " + dateStrings.month.toString(); 
-        dc.setColor( Gfx.COLOR_GREEN,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
+        dc.setColor(infoColor,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
         dc.drawText(width/2, height/2+height/3.5, Gfx.FONT_SMALL, date, Gfx.TEXT_JUSTIFY_CENTER);
 	}
 	
@@ -55,11 +55,18 @@ class HexWatchFaceView extends Ui.WatchFace {
 		}     
 
         var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
-        var timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
+        var timeFont; 
 		//System.println(timeString);
-		 dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
-		 dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);      
-
+		dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
+		var timeFontProperty = Application.getApp().getProperty("timeFont_prop");
+		if (timeFontProperty == 0) {
+			timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
+		}
+		else {
+			timeFont = Gfx.FONT_NUMBER_THAI_HOT;
+			timeString = timeString.toLower();
+		}      
+		dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);   
 	}
 	
 	function drawBT(dc) {
@@ -100,7 +107,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 			text = text + " " + distance + units;
 		}
 			 
-		dc.setColor( Gfx.COLOR_GREEN,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
+		dc.setColor(infoColor,Gfx.COLOR_TRANSPARENT);//,  Gfx.COLOR_TRANSPARENT);
         dc.drawText(width/2, height/2+height/5, Gfx.FONT_SMALL, text , Gfx.TEXT_JUSTIFY_CENTER);
 
 	}
@@ -125,6 +132,7 @@ class HexWatchFaceView extends Ui.WatchFace {
     	
     	timeColor = Application.getApp().getProperty("timeColor_prop");
     	backColor = Application.getApp().getProperty("backColor_prop");
+    	infoColor = Application.getApp().getProperty("infoColor_prop");
     	dc.setColor(timeColor,backColor);
  		dc.clear();     
         drawTime(dc);
