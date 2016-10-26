@@ -35,71 +35,71 @@
 	</strings>
 
 	<settings>
-		<setting propertyKey="timeColor_prop" title="timeColor_title"
-			prompt="timeColor_prompt">
+		<setting propertyKey="@Properties.timeColor_prop" title="@Strings.timeColor_title"
+			prompt="@Strings.timeColor_prompt">
 			<settingConfig type="list">
-				<listEntry value="0xFFFFFF">white_title</listEntry>
-				<listEntry value="0xAAAAAA">lt_gray_title</listEntry>
-				<listEntry value="0x555555">dk_gray_title</listEntry>
-				<listEntry value="0x000000">black_title</listEntry>
-				<listEntry value="0xFF0000">red_title</listEntry>
-				<listEntry value="0xAA0000">dk_red_title</listEntry>
-				<listEntry value="0xFF5500">orange_title</listEntry>
-				<listEntry value="0xFFAA00">yellow_title</listEntry>
-				<listEntry value="0x00FF00">green_title</listEntry>
-				<listEntry value="0x00AA00">dk_green_title</listEntry>
-				<listEntry value="0x00AAFF">blue_title</listEntry>
-				<listEntry value="0x0000FF">dk_blue_title</listEntry>
-				<listEntry value="0xAA00FF">purple_title</listEntry>
-				<listEntry value="0xFF00FF">pink_title</listEntry>
+				<listEntry value="0xFFFFFF">@Strings.white_title</listEntry>
+				<listEntry value="0xAAAAAA">@Strings.lt_gray_title</listEntry>
+				<listEntry value="0x555555">@Strings.dk_gray_title</listEntry>
+				<listEntry value="0x000000">@Strings.black_title</listEntry>
+				<listEntry value="0xFF0000">@Strings.red_title</listEntry>
+				<listEntry value="0xAA0000">@Strings.dk_red_title</listEntry>
+				<listEntry value="0xFF5500">@Strings.orange_title</listEntry>
+				<listEntry value="0xFFAA00">@Strings.yellow_title</listEntry>
+				<listEntry value="0x00FF00">@Strings.green_title</listEntry>
+				<listEntry value="0x00AA00">@Strings.dk_green_title</listEntry>
+				<listEntry value="0x00AAFF">@Strings.blue_title</listEntry>
+				<listEntry value="0x0000FF">@Strings.dk_blue_title</listEntry>
+				<listEntry value="0xAA00FF">@Strings.purple_title</listEntry>
+				<listEntry value="0xFF00FF">@Strings.pink_title</listEntry>
 			</settingConfig>
 		</setting>
 		
-		<setting propertyKey="timeFont_prop" title="timeFont_title"
-			prompt="timeFont_prompt">
+		<setting propertyKey="@Properties.timeFont_prop" title="@Strings.timeFont_title"
+			prompt="@Strings.timeFont_prompt">
 			<settingConfig type="list">
-				<listEntry value="0">DOS_title</listEntry>
-				<listEntry value="1">standard_title</listEntry>
+				<listEntry value="0">@Strings.DOS_title</listEntry>
+				<listEntry value="1">@Strings.standard_title</listEntry>
 			</settingConfig>
 		</setting>
 
-		<setting propertyKey="backColor_prop" title="backColor_title"
-			prompt="backColor_prompt">
+		<setting propertyKey="@Properties.backColor_prop" title="@Strings.backColor_title"
+			prompt="@Strings.backColor_prompt">
 			<settingConfig type="list">
-				<listEntry value="0xFFFFFF">white_title</listEntry>
-				<listEntry value="0xAAAAAA">lt_gray_title</listEntry>
-				<listEntry value="0x555555">dk_gray_title</listEntry>
-				<listEntry value="0x000000">black_title</listEntry>
-				<listEntry value="0xFF0000">red_title</listEntry>
-				<listEntry value="0xAA0000">dk_red_title</listEntry>
-				<listEntry value="0xFF5500">orange_title</listEntry>
-				<listEntry value="0xFFAA00">yellow_title</listEntry>
-				<listEntry value="0x00FF00">green_title</listEntry>
-				<listEntry value="0x00AA00">dk_green_title</listEntry>
-				<listEntry value="0x00AAFF">blue_title</listEntry>
-				<listEntry value="0x0000FF">dk_blue_title</listEntry>
-				<listEntry value="0xAA00FF">purple_title</listEntry>
-				<listEntry value="0xFF00FF">pink_title</listEntry>
+				<listEntry value="0xFFFFFF">@Strings.white_title</listEntry>
+				<listEntry value="0xAAAAAA">@Strings.lt_gray_title</listEntry>
+				<listEntry value="0x555555">@Strings.dk_gray_title</listEntry>
+				<listEntry value="0x000000">@Strings.black_title</listEntry>
+				<listEntry value="0xFF0000">@Strings.red_title</listEntry>
+				<listEntry value="0xAA0000">@Strings.dk_red_title</listEntry>
+				<listEntry value="0xFF5500">@Strings.orange_title</listEntry>
+				<listEntry value="0xFFAA00">@Strings.yellow_title</listEntry>
+				<listEntry value="0x00FF00">@Strings.green_title</listEntry>
+				<listEntry value="0x00AA00">@Strings.dk_green_title</listEntry>
+				<listEntry value="0x00AAFF">@Strings.blue_title</listEntry>
+				<listEntry value="0x0000FF">@Strings.dk_blue_title</listEntry>
+				<listEntry value="0xAA00FF">@Strings.purple_title</listEntry>
+				<listEntry value="0xFF00FF">@Strings.pink_title</listEntry>
 			</settingConfig>
 		</setting>
 		
-		<setting propertyKey="infoColor_prop" title="infoColor_title"
-			prompt="infoColor_prompt">
+		<setting propertyKey="@Properties.infoColor_prop" title="@Strings.infoColor_title"
+			prompt="@Strings.infoColor_prompt">
 			<settingConfig type="list">
-				<listEntry value="0xFFFFFF">white_title</listEntry>
-				<listEntry value="0xAAAAAA">lt_gray_title</listEntry>
-				<listEntry value="0x555555">dk_gray_title</listEntry>
-				<listEntry value="0x000000">black_title</listEntry>
-				<listEntry value="0xFF0000">red_title</listEntry>
-				<listEntry value="0xAA0000">dk_red_title</listEntry>
-				<listEntry value="0xFF5500">orange_title</listEntry>
-				<listEntry value="0xFFAA00">yellow_title</listEntry>
-				<listEntry value="0x00FF00">green_title</listEntry>
-				<listEntry value="0x00AA00">dk_green_title</listEntry>
-				<listEntry value="0x00AAFF">blue_title</listEntry>
-				<listEntry value="0x0000FF">dk_blue_title</listEntry>
-				<listEntry value="0xAA00FF">purple_title</listEntry>
-				<listEntry value="0xFF00FF">pink_title</listEntry>
+				<listEntry value="0xFFFFFF">@Strings.white_title</listEntry>
+				<listEntry value="0xAAAAAA">@Strings.lt_gray_title</listEntry>
+				<listEntry value="0x555555">@Strings.dk_gray_title</listEntry>
+				<listEntry value="0x000000">@Strings.black_title</listEntry>
+				<listEntry value="0xFF0000">@Strings.red_title</listEntry>
+				<listEntry value="0xAA0000">@Strings.dk_red_title</listEntry>
+				<listEntry value="0xFF5500">@Strings.orange_title</listEntry>
+				<listEntry value="0xFFAA00">@Strings.yellow_title</listEntry>
+				<listEntry value="0x00FF00">@Strings.green_title</listEntry>
+				<listEntry value="0x00AA00">@Strings.dk_green_title</listEntry>
+				<listEntry value="0x00AAFF">@Strings.blue_title</listEntry>
+				<listEntry value="0x0000FF">@Strings.dk_blue_title</listEntry>
+				<listEntry value="0xAA00FF">@Strings.purple_title</listEntry>
+				<listEntry value="0xFF00FF">@Strings.pink_title</listEntry>
 			</settingConfig>
 		</setting>
 		

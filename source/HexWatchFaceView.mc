@@ -1,29 +1,33 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.System as Sys;
-//using Toybox.Lang as Lang;
-
-
 
 
 class HexWatchFaceView extends Ui.WatchFace {
 
 	var wakeMode = true;  // check if user looks at his fenix3 is set in onhide() at the end of source code
 	var width, height;
-	var timeColor, backColor, infoColor;
+	var timeColor, backColor, infoColor, screenShape;
+	
+	function initialize() {
+        WatchFace.initialize();
+        screenShape = Sys.getDeviceSettings().screenShape;
+    }
 	
     //! Load your resources here
     function onLayout(dc) {
     	width = dc.getWidth();
      	height = dc.getHeight();
         setLayout(Rez.Layouts.WatchFace(dc));
+        dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_WHITE);
     }
 
     //! Called when this View is brought to the foreground. Restore
     //! the state of this View and prepare it to be shown. This includes
     //! loading resources into memory.
-    function onShow() {
-    }
+   // function onShow() {
+    
+  //  }
     
     function drawDate(dc) {	
 		var dateStrings = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
@@ -57,13 +61,13 @@ class HexWatchFaceView extends Ui.WatchFace {
         var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
         var timeFont; 
 		//System.println(timeString);
-		dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
+		//dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
 		var timeFontProperty = Application.getApp().getProperty("timeFont_prop");
 		if (timeFontProperty == 0) {
 			timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
 		}
 		else {
-			timeFont = Gfx.FONT_NUMBER_THAI_HOT;
+			timeFont = Gfx.FONT_NUMBER_THAI_HOT; //Gfx.FONT_SYSTEM_LARGE;
 			timeString = timeString.toLower();
 		}      
 		dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);   
