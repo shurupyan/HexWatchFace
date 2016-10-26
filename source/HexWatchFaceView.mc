@@ -67,7 +67,7 @@ class HexWatchFaceView extends Ui.WatchFace {
 			timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
 		}
 		else {
-			timeFont = Gfx.FONT_NUMBER_THAI_HOT; //Gfx.FONT_SYSTEM_LARGE;
+			timeFont = Gfx.FONT_LARGE;
 			timeString = timeString.toLower();
 		}      
 		dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);   
