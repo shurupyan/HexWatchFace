@@ -14,6 +14,8 @@
 	<fonts>
 		<font id="id_font_terminal_100" filename="fonts/terminal_100_123.fnt"
 			filter="0123456789:ABCDEFxap" />
+		<font id="id_font_open_sans_90" filename="fonts/open_sans_90.fnt"
+			filter="0123456789:ABCDEFxap" />
 	</fonts>
 
 

@@ -13,7 +13,7 @@
 		<string id="timeFont_title">Time font</string>
 		<string id="timeFont_prompt">Select font of time digits</string>
 		<string id="DOS_title">DOS-like font</string>
-		<string id="standard_title">Standard font</string>
+		<string id="open_sans_title">Open Sans font</string>
 		<string id="backColor_title">Background color</string>
 		<string id="backColor_prompt">Select color of background</string>
 		<string id="infoColor_title">Info color</string>
@@ -59,7 +59,7 @@
 			prompt="@Strings.timeFont_prompt">
 			<settingConfig type="list">
 				<listEntry value="0">@Strings.DOS_title</listEntry>
-				<listEntry value="1">@Strings.standard_title</listEntry>
+				<listEntry value="1">@Strings.open_sans_title</listEntry>
 			</settingConfig>
 		</setting>
 
