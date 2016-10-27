@@ -57,8 +57,13 @@ class HexWatchFaceView extends Ui.WatchFace {
         	}
         	hoursStr = hours.format("%1X");       	
 		}     
-
-        var timeString = "0x" + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
+		
+		var timePrefix = "";
+		if (Application.getApp().getProperty("showZeroPrefix_prop")){
+			timePrefix = "0x";
+		}
+		
+        var timeString = timePrefix + hoursStr + ":" +  clockTime.min.format("%02X") + ampm; // decToHex(clockTime.min);
         var timeFont; 
 		//System.println(timeString);
 		//dc.setColor(timeColor,Gfx.COLOR_TRANSPARENT);
@@ -67,7 +72,12 @@ class HexWatchFaceView extends Ui.WatchFace {
 			timeFont = Ui.loadResource(Rez.Fonts.id_font_terminal_100);  // load font from resources.xml
 		}
 		else {
-			timeFont = Ui.loadResource(Rez.Fonts.id_font_open_sans_90);
+			if (Application.getApp().getProperty("bigFont_prop")){
+				timeFont = Ui.loadResource(Rez.Fonts.id_font_open_sans_110);
+			}
+			else {
+				timeFont = Ui.loadResource(Rez.Fonts.id_font_open_sans_90);
+			}
 			//timeString = timeString.toLower();
 		}      
 		dc.drawText(width/2,  height/2 ,timeFont, timeString, Gfx.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER);   

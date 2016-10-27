@@ -5,6 +5,8 @@
 		<property id="timeFont_prop" type="number">0</property>
 		<property id="backColor_prop" type="number">0x000000</property>
 		<property id="infoColor_prop" type="number">0x00AA00</property>
+		<property id="showZeroPrefix_prop" type="boolean">true</property>
+		<property id="bigFont_prop" type="boolean">true</property>
 	</properties>
 
 	<strings>
@@ -12,6 +14,8 @@
 		<string id="timeColor_prompt">Select color of time digits</string>
 		<string id="timeFont_title">Time font</string>
 		<string id="timeFont_prompt">Select font of time digits</string>
+		<string id="showZeroPrefix_title">Show '0x' prefix</string>
+		<string id="bigFont_title">Use big Sans font without '0x' prefix</string>
 		<string id="DOS_title">DOS-like font</string>
 		<string id="open_sans_title">Open Sans font</string>
 		<string id="backColor_title">Background color</string>
@@ -35,6 +39,15 @@
 	</strings>
 
 	<settings>
+	
+		<setting propertyKey="@Properties.showZeroPrefix_prop" title="@Strings.showZeroPrefix_title">
+				<settingConfig type="boolean"/>
+		</setting>
+		
+		<setting propertyKey="@Properties.bigFont_prop" title="@Strings.bigFont_title">
+				<settingConfig type="boolean"/>
+		</setting>
+		
 		<setting propertyKey="@Properties.timeColor_prop" title="@Strings.timeColor_title"
 			prompt="@Strings.timeColor_prompt">
 			<settingConfig type="list">
